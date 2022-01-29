@@ -22,12 +22,13 @@ let block = document.getElementsByTagName('div');
 block[0].style.fontSize = prompt ('Введіть розмір тексту');
 block[0].style.color = prompt ('Введіть колір тексту');
 block[0].style.fontWeight = prompt ('Введіть товщину тексту');
+let h = document.getElementsByTagName('h2');
+h[0].style.fontWeight = 'inherit';
 // ----------------type-------------------
 let ul = document.getElementsByTagName('ul');
 ul[0].style.listStyleType = prompt ('Введіть тип маркового списку');
 
 // ----------------Dodatkovo-------------------
-let link = document.getElementsByClassName('link');
 for (let i = 0; i < link.length; i++) {
     link[i].target ='_blank';
     link[i].textContent = prompt ('Введіть адресу');
